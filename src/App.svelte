@@ -14,9 +14,10 @@
 <main>
 <IncrementButton></IncrementButton>
 <ExportFieldComponent name="samet"></ExportFieldComponent>
+<EventOne></EventOne>
 {@html string}
 </main>
-<EventOne></EventOne>
+
 <style>
 	main {
 		text-align: center;
