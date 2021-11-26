@@ -1,4 +1,6 @@
 <script>
+  import EventOne from './EventOne.svelte';
+
   import IncrementButton from './IncrementButton.svelte';
 
   import ExportFieldComponent from './ExportFieldComponent.svelte';
@@ -14,7 +16,7 @@
 <ExportFieldComponent name="samet"></ExportFieldComponent>
 {@html string}
 </main>
-
+<EventOne></EventOne>
 <style>
 	main {
 		text-align: center;
