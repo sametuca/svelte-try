@@ -1,10 +1,14 @@
 <script>
+  import Samet2 from './Samet2.svelte';
 	export let name;
+	export let url;
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
+<Samet2 samet=14></Samet2>
+	<h1>Hello {name}</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+
 </main>
 
 <style>
