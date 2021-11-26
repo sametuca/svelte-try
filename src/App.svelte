@@ -1,14 +1,16 @@
 <script>
-  import Samet2 from './Samet2.svelte';
-	export let name;
-	export let url;
+  import IncrementButton from './IncrementButton.svelte';
+
+  import ExportFieldComponent from './ExportFieldComponent.svelte';
+
+	// js kodları script içerisine yazılırken, diğer yapılar main bloğu içerisinde tutuluyor.
+	// Asıl component main. Main html içerisinde body'e karşılık gelmektedir. Dolasıyla tüm çağrıları orada yapıyoruz.
+	let string = `this string contains some <strong>HTML!!!</strong>`;
+
 </script>
-
 <main>
-<Samet2 samet=14></Samet2>
-	<h1>Hello {name}</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-
+<IncrementButton></IncrementButton>
+<ExportFieldComponent name="samet"></ExportFieldComponent>
 </main>
 
 <style>
