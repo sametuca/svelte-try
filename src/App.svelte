@@ -1,4 +1,8 @@
 <script>
+  import EkleVeTopla from './EkleVeTopla.svelte';
+
+  import MultiAndOtherEvent from './MultiAndOtherEvent.svelte';
+
   import EventOne from './EventOne.svelte';
 
   import IncrementButton from './IncrementButton.svelte';
@@ -15,7 +19,9 @@
 <IncrementButton></IncrementButton>
 <ExportFieldComponent name="samet"></ExportFieldComponent>
 <EventOne></EventOne>
-{@html string}
+<MultiAndOtherEvent></MultiAndOtherEvent>
+<EkleVeTopla></EkleVeTopla>
+<h5>{@html string}</h5>
 </main>
 
 <style>

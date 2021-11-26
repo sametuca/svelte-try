@@ -2,7 +2,5 @@
 export let name;
 </script>
 
-
-<main>
-    <h1>{name ? name+' parametre olarak gelmiş olabilir :)' : "bir parametre gelmemiş :("} </h1>
-</main>
+<h2>Component[ExportFieldComponent] = Farklı komponentten gelen parametreyi ekrana yaz</h2>
+<h5>{name ? name+' parametre olarak gelmiş olabilir :)' : "bir parametre gelmemiş :("} </h5>

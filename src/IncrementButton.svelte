@@ -5,7 +5,7 @@ function IncrementValue() {
 }
 
 </script>
-
+<h2>Component[IncrementButton] = Tıklandığında artan sayılar</h2>
 <button on:click="{IncrementValue}">
     {value}
 </button>
