@@ -2,15 +2,17 @@
   import IncrementButton from './IncrementButton.svelte';
 
   import ExportFieldComponent from './ExportFieldComponent.svelte';
-
+	//#region what is main?
 	// js kodları script içerisine yazılırken, diğer yapılar main bloğu içerisinde tutuluyor.
 	// Asıl component main. Main html içerisinde body'e karşılık gelmektedir. Dolasıyla tüm çağrıları orada yapıyoruz.
+	//#endregion
 	let string = `this string contains some <strong>HTML!!!</strong>`;
 
 </script>
 <main>
 <IncrementButton></IncrementButton>
 <ExportFieldComponent name="samet"></ExportFieldComponent>
+{@html string}
 </main>
 
 <style>
