@@ -1,4 +1,10 @@
 <script>
+  import EachStatement from './EachStatement.svelte';
+
+  import IfStatementLoginLogout from './IfStatementLoginLogout.svelte';
+
+  import IfStatement from './IfStatement.svelte';
+
   import EkleVeTopla from './EkleVeTopla.svelte';
 
   import MultiAndOtherEvent from './MultiAndOtherEvent.svelte';
@@ -8,11 +14,6 @@
   import IncrementButton from './IncrementButton.svelte';
 
   import ExportFieldComponent from './ExportFieldComponent.svelte';
-	//#region what is main?
-	// js kodları script içerisine yazılırken, diğer yapılar main bloğu içerisinde tutuluyor.
-	// Asıl component main. Main html içerisinde body'e karşılık gelmektedir. Dolasıyla tüm çağrıları orada yapıyoruz.
-	//#endregion
-	let string = `this string contains some <strong>HTML!!!</strong>`;
 
 </script>
 <main>
@@ -21,7 +22,9 @@
 <EventOne></EventOne>
 <MultiAndOtherEvent></MultiAndOtherEvent>
 <EkleVeTopla></EkleVeTopla>
-<h5>{@html string}</h5>
+<IfStatement></IfStatement>
+<IfStatementLoginLogout></IfStatementLoginLogout>
+<EachStatement></EachStatement>
 </main>
 
 <style>
